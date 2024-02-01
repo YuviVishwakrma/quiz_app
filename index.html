@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CODE BREW LABS</title>
+</head>
+<body>
+    <div class="first">
+        
+        <div class="yuvi">
+        <h1>Welcome to the Quiz!</h1>
+        <H3>Here are the rules:</H3>
+        <div class="info">1. YOU WILL HAVE ONLY <span>10SEC</span> PER EACH QUESTION.</div>
+        <div class="info">2. ONCE YOU SELECT YOUR  ANSWER, IT CAN'T BE UNDONE</div>
+        <div class="info">3. YOU'LL GET REWWARDS ON THE BASIS OF YOUR CORRECT ANSWERS</div>
+        <button id="start-button">Start</button>
+        </div>
+
+<div class="user-input">
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" required>
+    <button id="go-button">Go</button>
+</div>
+
+    </div>
+    
+    <div id="display-container">
+        <div class="second">
+            <div class="count">
+                <span class="ques">1 of 3 questions</span>
+            </div>
+            <div class="timer">
+                <img src="stopwatch.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+          
+        </div>
+        <button id="next-button">Next</button>
+      
+        <button id="submit-button" class="submit-button" onclick="submitQuiz()">Submit Test</button>
+
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+        
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
